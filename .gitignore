@@ -41,3 +41,9 @@ microservices
 settings.gradle
 api
 .env
+/gradle/wrapper/.tmp/
+/gradle/wrapper/caches/
+/gradle/wrapper/daemon/
+/gradle/wrapper/jdks/
+/gradle/wrapper/native/
+/gradle/wrapper/wrapper/
