@@ -1,15 +1,12 @@
-package sc.app.springcloud.gateway;
+package sc.app.springcloud.configserver;
 
 import static org.springframework.boot.test.context.SpringBootTest.WebEnvironment.RANDOM_PORT;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest(webEnvironment = RANDOM_PORT,
-  properties = {
-    "eureka.client.enabled=false",
-    "spring.cloud.config.enabled=false"})
-class GatewayApplicationTests {
+@SpringBootTest(webEnvironment = RANDOM_PORT, properties = {"spring.profiles.active=native"})
+class ConfigServerApplicationTests {
 
   @Test
   void contextLoads() {
