@@ -10,15 +10,15 @@ import reactor.core.publisher.Hooks;
 @SpringBootApplication
 public class GatewayApplication {
 
-  @Bean
-  @LoadBalanced
-  public WebClient.Builder loadBalancedWebClientBuilder() {
-    return WebClient.builder();
-  }
+    @Bean
+    @LoadBalanced
+    public WebClient.Builder loadBalancedWebClientBuilder() {
+        return WebClient.builder();
+    }
 
-  public static void main(String[] args) {
-    Hooks.enableAutomaticContextPropagation();
-    SpringApplication.run(GatewayApplication.class, args);
-  }
+    public static void main(String[] args) {
+        Hooks.enableAutomaticContextPropagation();
+        SpringApplication.run(GatewayApplication.class, args);
+    }
 
 }
